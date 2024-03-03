@@ -33,5 +33,21 @@ public class ChatBot {
             System.out.println(i + "!");
         }
 
+        // quiz the user
+        System.out.println("Let's test your programming knowledge");
+        String question = """
+                What is the best programming language?
+                1. Python
+                2. Java
+                3. Javascript
+                4. C++
+                """;
+        System.out.println(question);
+        int userResponse = scanner.nextInt();
+
+        while (userResponse != 2) {
+            System.out.println("Please, try again");
+            userResponse = scanner.nextInt();
+        }
     }
 }
