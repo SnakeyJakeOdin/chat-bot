@@ -24,8 +24,14 @@ public class ChatBot {
 
         // age guessing formula (valid from 0 to 104)
         int age = (remainder3 * 70 + remainder5 * 21 + remainder7 * 15) % 105;
-
         System.out.printf("Your age is %d; that's a good time to start programming!", age);
+
+        // read a number and count up to it
+        System.out.println("Give me a number and I will count up to it.");
+        int maxNumber = scanner.nextInt();
+        for (int i = 0; i <= maxNumber; i++) {
+            System.out.println(i + "!");
+        }
 
     }
 }
